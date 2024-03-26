@@ -1,54 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex</title>
+    <title>Aspect Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      body {
-        height: 100vh;
+      body,
+      html {
         margin: 0;
-        padding: 10px;
+        padding: 0;
+        height: 100%;
       }
-      .parent-container {
-        height: auto;
-        width: 100%;
-        border: 2px solid red;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
-      .square {
-        width: 100px;
-        height: 100px;
-        background-color: dodgerblue;
-        margin: 10px;
-        font-size: 24px;
+
+      header {
+        background-color: blue;
         color: white;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .big {
-        background-color: yellowgreen;
-        width: 200px;
-        height: 200px;
+
+      nav {
+        background-color: #333;
+        color: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .bigger {
-        background-color: brown;
-        width: 400px;
-        height: 400px;
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        background-color: white;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer {
+        background-color: #444;
+        color: white;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div class="parent-container">
-      <div class="square">1</div>
-      <div class="square">2</div>
-      <div class="square">3</div>
-      <div class="square">4</div>
-      <div class="square">5</div>
-      <div class="square">6</div>
-      <div class="square">7</div>
-      <div class="square big">8</div>
-      <div class="square big">9</div>
-      <div class="square big">10</div>
-      <div class="square bigger">11</div>
-      <div class="square bigger">12</div>
+    <div class="container">
+      <header>Antet</header>
+      <nav>
+        <ul>
+          <li><a href="#">Acasă</a></li>
+          <li><a href="#">Despre</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <main>Zonă principală de conținut</main>
+      <footer>Subsol</footer>
     </div>
   </body>
 </html>
