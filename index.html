@@ -3,29 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aspect Flexbox</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-    </style>
+    <title>Eveniment de Strângere de Fonduri</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header>Antet</header>
-      <nav>
+    <header>
+      <h1>Eveniment Caritabil</h1>
+      <p>Alătură-te nouă pentru a face o schimbare în comunitate!</p>
+    </header>
+    <main>
+      <section class="event-details">
+        <h2>Despre Eveniment</h2>
+        <p>
+          Aceasta este o ocazie unică de a ne aduna împreună pentru a susține o
+          cauză nobilă. Vom avea activități distractive, mâncare delicioasă și
+          oportunitatea de a face o diferență în viețile altora.
+        </p>
+        <h3>Puncte Importante:</h3>
         <ul>
-          <li><a href="#">Acasă</a></li>
-          <li><a href="#">Despre</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>Vor fi activități pentru întreaga familie.</li>
+          <li>
+            Toate fondurile strânse vor fi donate către organizația caritabilă
+            locală.
+          </li>
+          <li>
+            Evenimentul va avea loc în Parcul Central sâmbătă, 15 mai 2024,
+            începând cu ora 10:00.
+          </li>
         </ul>
-      </nav>
-      <main>Zonă principală de conținut</main>
-      <footer>Subsol</footer>
-    </div>
+      </section>
+      <aside class="registration-form">
+        <h2>Înscrie-te Acum!</h2>
+        <form>
+          <label for="name">Nume:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Trimite Înscrierea</button>
+        </form>
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Pentru mai multe informații, contactați-ne la:
+        <a href="mailto:contact@evenimentcaritabil.ro"
+          >contact@evenimentcaritabil.ro</a
+        >
+      </p>
+      <p>
+        Urmați-ne pe rețelele sociale: <a href="#">Facebook</a>,
+        <a href="#">Twitter</a>, <a href="#">Instagram</a>
+      </p>
+    </footer>
   </body>
 </html>
