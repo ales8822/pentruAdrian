@@ -3,57 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eveniment de Strângere de Fonduri</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Meniu Restaurant</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      nav,
+      main,
+      footer {
+        padding: 20px;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+      }
+      nav {
+        background-color: #444;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .menu-item {
+        width: 300px;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .menu-item img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Eveniment Caritabil</h1>
-      <p>Alătură-te nouă pentru a face o schimbare în comunitate!</p>
+      <h1>Numele Restaurantului</h1>
+      <img src="logo.png" alt="Logo-ul Restaurantului" />
     </header>
+
+    <nav>
+      <a href="#">Acasă</a>
+      <a href="#">Meniu</a>
+      <a href="#">Despre Noi</a>
+      <a href="#">Contact</a>
+    </nav>
+
     <main>
-      <section class="event-details">
-        <h2>Despre Eveniment</h2>
-        <p>
-          Aceasta este o ocazie unică de a ne aduna împreună pentru a susține o
-          cauză nobilă. Vom avea activități distractive, mâncare delicioasă și
-          oportunitatea de a face o diferență în viețile altora.
-        </p>
-        <h3>Puncte Importante:</h3>
-        <ul>
-          <li>Vor fi activități pentru întreaga familie.</li>
-          <li>
-            Toate fondurile strânse vor fi donate către organizația caritabilă
-            locală.
-          </li>
-          <li>
-            Evenimentul va avea loc în Parcul Central sâmbătă, 15 mai 2024,
-            începând cu ora 10:00.
-          </li>
-        </ul>
-      </section>
-      <aside class="registration-form">
-        <h2>Înscrie-te Acum!</h2>
-        <form>
-          <label for="name">Nume:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <button type="submit">Trimite Înscrierea</button>
-        </form>
-      </aside>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="item1.jpg" alt="Articolul 1" />
+          <h2>Articolul 1</h2>
+          <p>Descrierea Articolului 1</p>
+          <p>10.99 lei</p>
+        </div>
+        <div class="menu-item">
+          <img src="item2.jpg" alt="Articolul 2" />
+          <h2>Articolul 2</h2>
+          <p>Descrierea Articolului 2</p>
+          <p>8.99 lei</p>
+        </div>
+        <!-- Adăugați mai multe articole de meniu aici -->
+      </div>
     </main>
+
     <footer>
-      <p>
-        Pentru mai multe informații, contactați-ne la:
-        <a href="mailto:contact@evenimentcaritabil.ro"
-          >contact@evenimentcaritabil.ro</a
-        >
-      </p>
-      <p>
-        Urmați-ne pe rețelele sociale: <a href="#">Facebook</a>,
-        <a href="#">Twitter</a>, <a href="#">Instagram</a>
-      </p>
+      <p>&copy; 2024 Numele Restaurantului. Toate drepturile rezervate.</p>
+      <div>
+        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+      </div>
     </footer>
   </body>
 </html>
